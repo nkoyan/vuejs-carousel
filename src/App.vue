@@ -11,6 +11,11 @@
                 img="http://lorempixel.com/630/300/cats/2/"
             >
             </carousel-slide>
+            <carousel-slide
+                text="Aurevoir les gens"
+                img="http://lorempixel.com/630/300/cats/3/"
+            >
+            </carousel-slide>
         </carousel>
     </div>
 </template>

@@ -1,7 +1,6 @@
 <template>
     <transition :name="transition">
         <div v-show="visible">
-            Index: {{ index }}
             <div class="carousel__text">{{ text }}</div>
             <img :src="img" width="100%">
         </div>
