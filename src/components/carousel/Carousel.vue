@@ -17,11 +17,15 @@
             return {
                 index: 0,
                 slides: this.$children,
-                direction: null
+                direction: 'right'
             }
         },
-        mounted () {
-            this.slides.forEach((slide, i) => slide.index = i)
+        watch: {
+            slides () {
+                if (this.index === this.slidesCount) {
+                    this.index = this.slidesCount - 1
+                }
+            }
         },
         computed: {
             slidesCount () { return this.slides.length }
@@ -45,7 +49,7 @@
                 this.direction = index > this.index ? 'right' : 'left'
                 this.index = index
             }
-        }
+        },
     }
 </script>
 

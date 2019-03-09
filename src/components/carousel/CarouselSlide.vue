@@ -19,11 +19,10 @@
                 type: String,
                 default: ''
             },
-        },
-        data () {
-            return {
-                index: 0
-            }
+            index: {
+                type: Number,
+                default: 0
+            },
         },
         computed: {
             transition () {
